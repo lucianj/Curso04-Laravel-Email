@@ -4,10 +4,10 @@ Sistema de gerenciamento de séries de TV do curso de formação Laravel da Alur
 
 ## Requisitos
 
-- PHP >= 8.1  
-- Composer 2.8.1
+- PHP >= 8.2.12  
+- Composer 2.8.12
 - SQLite  
-- Node.js 16
+- Node.js 22.20.0
 
 ## Instalação
 
