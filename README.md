@@ -16,16 +16,19 @@ Sistema de gerenciamento de séries de TV do curso de formação Laravel da Alur
    ```bash
    git clone https://github.com/lucianj/Curso04-Laravel-Email.git
    cd Curso04-Laravel-Email
+   ```
 
 #### 2. Instale as dependências do PHP:
 
     ```bash
     composer install
+    ```
 
 #### 3. Copie o arquivo de ambiente e configure as variáveis:
 
     ```bash
     cp .env.example .env
+    ```
 
 #### 5. Crie o arquivo database.sqlite no diretório database
 
@@ -33,12 +36,14 @@ Sistema de gerenciamento de séries de TV do curso de formação Laravel da Alur
 
     ```bash
     php artisan migrate
+    ```
 
 #### 7. Instale demais dependências (se houver):
 
     ```bash
     npm install
     npm run dev
+    ```
 
 ## Rodando o projeto
 
