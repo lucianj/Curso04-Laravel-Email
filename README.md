@@ -20,13 +20,13 @@ Sistema de gerenciamento de séries de TV do curso de formação Laravel da Alur
 
 #### 2. Instale as dependências do PHP:
 
-    ```bash
+    ```
     composer install
     ```
 
 #### 3. Copie o arquivo de ambiente e configure as variáveis:
 
-    ```bash
+    ```
     cp .env.example .env
     ```
 
@@ -34,13 +34,13 @@ Sistema de gerenciamento de séries de TV do curso de formação Laravel da Alur
 
 #### 6. Rode as migrations para criar as tabelas do banco:
 
-    ```bash
+    ```
     php artisan migrate
     ```
 
 #### 7. Instale demais dependências (se houver):
 
-    ```bash
+    ```
     npm install
     npm run dev
     ```
