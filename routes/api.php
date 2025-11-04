@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\SeriesController;
+use App\Models\Episode;
 use App\Models\Series;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -32,4 +33,11 @@ Route::get('/series/{series}/episodes',
         return $series->episodes;
     }
 );
+
+Route::patch('/episodes/{episode}', function(Episode $episode, Request $request){
+    $episode->watched = $request->watched;
+    $episode->save();
+
+    return $episode;
+});
 //Route::get('/series', [\App\Http\Controllers\Api\SeriesController::class, 'index']);
