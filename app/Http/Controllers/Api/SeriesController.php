@@ -20,7 +20,8 @@ class SeriesController extends Controller
     {
         //dd($request->has('nome'));
         $query = Series::query();
-        if ($request->has('nome')){
+        if ($request->has('nome'))
+        {
             $query->where('nome', $request->nome);
         }
         
@@ -58,6 +59,7 @@ class SeriesController extends Controller
 
     public function update(Series $series, SeriesFormRequest $request){
         $series->fill($request->all());
+        $series->links;
         $series->save();
 
         return $series;
