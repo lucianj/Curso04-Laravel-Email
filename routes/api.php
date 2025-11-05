@@ -66,7 +66,9 @@ Route::post('/login', function(Request $request){
    }
    
    $user = Auth::user();
-   $token = $user->createToken('token');
+   $user->tokens()->delete();
+   //$token = $user->createToken('token');
+   $token = $user->createToken('token', ['series:delete']);
 
    return response()->json($token->plainTextToken);
    //dd($user);
